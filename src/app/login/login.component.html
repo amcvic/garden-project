@@ -1,0 +1,13 @@
+<div class='center'>
+  <h1>Login</h1>
+  <form>
+    <label>E-mail:
+      <input #email />
+    </label>
+    <label>Password:
+      <input type='password' #password/>
+    </label>
+    <button (click)='login(email.value, password.value);email.value="";password.value=""'>login</button>
+    <input type='submit' value='Submit'/>
+  </form>
+</div>
