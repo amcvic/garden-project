@@ -13,9 +13,11 @@ export class ProductsComponent implements OnInit {
   constructor(private gardenService: GardenService) { }
 
   products: Product[];
+  sessionToken: string;
 
   ngOnInit() {
     this.getProducts();
+    this.sessionToken = localStorage.getItem('token');
   }
 
   getProducts(): void {
@@ -23,7 +25,7 @@ export class ProductsComponent implements OnInit {
   }
 
   delete(id: number): void {
-    this.gardenService.deleteProduct(id).subscribe((response) => {console.log(response);this.ngOnInit()});
+    this.gardenService.deleteProduct(id).subscribe((response) => {this.ngOnInit()});
   }
 
 }

@@ -15,7 +15,7 @@ export class GardenService {
   ) { }
 
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'applicaton/json' })
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
   private log(message: string) {
@@ -25,13 +25,12 @@ export class GardenService {
   private loginUrl = 'http://localhost:3000/api/auth/login';
   private productUrl = 'http://localhost:3000/api/product'
 
-  login (email: string, password: string): Observable<User> {
+  login (email: string, password: string): Observable<any> {
     let user = new User();
     user.email = email;
     user.password = password;
-    console.log(email, password);
     return this.http.post(this.loginUrl, user, this.httpOptions).pipe(
-      tap((response: User) => this.log(`logged in as user: ${response}`)),
+      tap((response: any) => this.log('login success')),
       catchError(this.handleError<User>('login'))
     );
   }
