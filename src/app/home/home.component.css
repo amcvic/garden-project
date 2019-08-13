@@ -8,6 +8,10 @@ p {
 }
 
 .image {
-    background: url(../../assets/photo-1563865436874-9aef32095fad.jpg);
-    background-size: auto;
+    background: url(../../assets/photo-1562592306-54967af3926d.jpg);
+    /* background-size: 1080px 640px; */
+    width: auto;
+    height: 700px;
+    /* position: center; */
+    background-repeat: no-repeat;
 }
