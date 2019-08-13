@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  about='this is a page about the garden store'
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+
