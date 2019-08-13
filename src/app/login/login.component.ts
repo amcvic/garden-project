@@ -10,22 +10,17 @@ import { User } from '../user';
 })
 export class LoginComponent implements OnInit {
 
-  currentUser: User;
-
   constructor(private gardenService: GardenService) { }
 
   ngOnInit() {
   }
 
   login(email: string, password: string): void {
-    this.currentUser = new User();
-    this.currentUser.email = email;
-    this.currentUser.password = password;
     if (!email || !password) {
       return;
     }
-    this.gardenService.login(this.currentUser)
-      .subscribe((val) => console.log(val));
+    this.gardenService.login(email, password)
+      .subscribe((response) => console.log(response));
   }
 
 }

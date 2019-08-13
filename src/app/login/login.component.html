@@ -4,10 +4,11 @@
     <label>E-mail:
       <input #email />
     </label>
+    <br/>
     <label>Password:
       <input type='password' #password/>
     </label>
+    <br/>
     <button (click)='login(email.value, password.value);email.value="";password.value=""'>login</button>
-    <input type='submit' value='Submit'/>
   </form>
 </div>

@@ -1,5 +1,6 @@
 .center {
   text-align: center;
   border: 1px solid black;
+  border-radius: 15px 50px;
   padding: 20px;
 }

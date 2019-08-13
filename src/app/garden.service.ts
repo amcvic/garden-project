@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { User } from './user';
-import { Request } from './request';
+import { Product } from './product';
 
 @Injectable({
   providedIn: 'root'
@@ -23,12 +23,31 @@ export class GardenService {
   }
 
   private loginUrl = 'http://localhost:3000/api/auth/login';
+  private productUrl = 'http://localhost:3000/api/product'
 
-  login (user: User): Observable<User> {
-    console.log(user.email, user.password);
-    return this.http.post(this.loginUrl, {"email":user.email, "password":user.password}, this.httpOptions).pipe(
+  login (email: string, password: string): Observable<User> {
+    let user = new User();
+    user.email = email;
+    user.password = password;
+    console.log(email, password);
+    return this.http.post(this.loginUrl, user, this.httpOptions).pipe(
       tap((response: User) => this.log(`logged in as user: ${response}`)),
       catchError(this.handleError<User>('login'))
+    );
+  }
+
+  deleteProduct (id: number): Observable<any> {
+    console.log('gonna delete ' + this.productUrl + '/' + id);
+    return this.http.delete(this.productUrl + '/' + id, this.httpOptions).pipe(
+      tap((response: Object) => this.log(`deleted product. response: ${response}`)),
+      catchError(this.handleError<any>('deleteProduct'))
+    );
+  }
+
+  getProducts (): Observable<Product[]> {
+    return this.http.get(this.productUrl, this.httpOptions).pipe(
+      tap((products: Product[]) => this.log(`got response of ${products}`)),
+      catchError(this.handleError<Product[]>('getProducts'))
     );
   }
   
