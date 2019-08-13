@@ -1,0 +1,13 @@
+/* .container {
+    display: flex;
+    justify-content: center;
+} */
+
+p {
+    text-align: center;
+}
+
+.image {
+    background: url(../../assets/photo-1563865436874-9aef32095fad.jpg);
+    background-size: auto;
+}
