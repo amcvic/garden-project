@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
 
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
@@ -15,14 +17,16 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
   declarations: [
     AppComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    AboutComponent,
+    HomeComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    AboutComponent,
     AnimateOnScrollModule.forRoot()
   ],
   providers: [],

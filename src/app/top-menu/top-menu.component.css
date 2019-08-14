@@ -1,0 +1,87 @@
+a {
+  font-family: Noir;
+}
+
+h1 {
+  font-family: Noir;
+  color: #342a1d;
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../../assets/Noir/NoirStd-Regular.ttf');
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../../assets/Noir/NoirStd-Bold.ttf');
+  font-weight: bold;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 8px;
+}
+​
+.nav-link {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+​
+.nav-link a:hover {
+  background-color: #ddd;
+  color: black;
+}
+​
+.nav-link a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #342a1d;
+  border-radius: 15px 50px;
+  background-color: #a4c76f
+}
+​
+.nav-item {
+  display: block;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+​
+.nav-link a:hover {
+  background-color: #ddd;
+  color: black;
+  
+  padding: 100%;
+  margin: 50%; 
+  font-size: 3px;
+}
+​
+ul {
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+​
+li {
+  float: left;
+  padding: 8px;
+} 
+
+.container {
+  overflow: hidden;
+}

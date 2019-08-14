@@ -1,11 +1,11 @@
 .product {
-  background: lightgreen;
+  background: #a4c76f;
   width: 400px;
   height: 300px;
   border: 2px solid #342a1d;
   border-radius: 15px 50px;
   margin: 10px;
-  padding: 10px;
+  padding: 40px;
   text-align: center;
 }
 
@@ -15,9 +15,39 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  background: lightgoldenrodyellow;
 }
 
 h2, h4 {
   display: inline;
+  font-family: Noir;
+}
+
+p {
+  font-family: Noir;
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../../assets/Noir/NoirStd-Regular.ttf');
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../../assets/Noir/NoirStd-Bold.ttf');
+  font-weight: bold;
+}
+
+#background {
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  left: 0px; 
+  top: 0px; 
+  opacity: .3;
+  z-index: -1; 
+}
+
+.stretch {
+  width:100%;
+  height:100%;
 }

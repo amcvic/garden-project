@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+​
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 20;
+  width: 100%;
+  background-color: #763a05;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#background {
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  left: 0px; 
+  top: 0px; 
+  opacity: .3;
+  z-index: -1; 
+}
+
+.stretch {
+  width:100%;
+  height:100%;
+}
+
+.center {
+  width: 30%;
+  font-family: Noir;
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../assets/Noir/NoirStd-Regular.ttf');
+}
+
+@font-face {
+  font-family: Noir;
+  src: url('../assets/Noir/NoirStd-Bold.ttf');
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h3 {
+  color: #342a1d;
+}

@@ -1,3 +1,19 @@
+.halfscreen {
+  width: 15%;
+  margin: 20px;
+  padding: 30px;
+}
+
+#message {
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #background {
     width: 100%; 
     height: 100%; 
@@ -25,7 +41,7 @@
   h3, p, ::placeholder, .button {
     font-family: Noir; 
     letter-spacing: 2px;
-    color: #666737;
+    color: #342a1d;
   }
 
   ::placeholder, .button {
@@ -53,7 +69,7 @@
     background-color:#a4c76f;
     border: none;
     border-radius: 4px;
-    height: 1em;
+    height: 1.2em;
     font-size: 1em;
     padding-left: .4em;
   }

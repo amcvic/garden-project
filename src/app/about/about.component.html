@@ -1,16 +1,20 @@
-<div id='background'>
-       <img src="../../assets/leafbackground.jpg" class="stretch" alt="leaves with heart"/>
-</div>
+<div class='container'>
+
+<div class='halfscreen'>
 <h3>About Us</h3>
 <p>Good Thymes Garden Source is your go-to source for good thymes in the garden!<br/>
     Come visit us for all of your garden needs!</p>
-
+</div>
+<div class='halfscreen'>
 <form id="contactform" method="POST">
     <form action="https://formspree.io/foxbeckya@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your name" /><br/>
     <input type="email" name="_replyto" placeholder="Your email" /><br/>
     <input type="hidden" name="_subject" value="Garden Project contact" />
-    <textarea name="message" placeholder="Your message"></textarea><br/>
+    <textarea id='message' name="message" placeholder="Your message"></textarea><br/>
     <input type="text" name="_gotcha" style="display:none" />
     <input class="button" type="submit" value="Submit Form" />
+    </form>
 </form>
+</div>
+</div>

@@ -1,6 +1,6 @@
 <div class='center'>
     <h1>Login</h1>
-    <form>
+    <form *ngIf='!loggedIn'>
       <label>E-mail:
         <input #email />
       </label>
@@ -10,6 +10,9 @@
       </label>
       <br/>
       <button (click)='login(email.value, password.value);email.value="";password.value=""'>login</button>
-      <button (click)='logout()'>logout</button>
     </form>
+    <div *ngIf='loggedIn'>
+      <p>Logged in as admin</p>
+      <button (click)='logout()'>logout</button>
+    </div>
 </div>

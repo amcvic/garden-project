@@ -45,7 +45,7 @@ export class GardenService {
 
   getProducts (): Observable<Product[]> {
     return this.http.get(this.productUrl, this.httpOptions).pipe(
-      tap((products: Product[]) => this.log(`got response of ${products}`)),
+      tap((products: Product[]) => this.log('products fetched')),
       catchError(this.handleError<Product[]>('getProducts'))
     );
   }

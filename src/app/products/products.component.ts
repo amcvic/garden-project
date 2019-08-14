@@ -21,7 +21,7 @@ export class ProductsComponent implements OnInit {
   }
 
   getProducts(): void {
-    this.gardenService.getProducts().subscribe((products) => {this.products = products; console.log(this.products)});
+    this.gardenService.getProducts().subscribe((products) => {this.products = products});
   }
 
   delete(id: number): void {
