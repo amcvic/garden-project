@@ -2,9 +2,10 @@ a {
   font-family: Noir;
 }
 
-h1 {
+h1, h1 a:visited, h1 a {
   font-family: Noir;
   color: #342a1d;
+  text-decoration: none;
 }
 
 @font-face {

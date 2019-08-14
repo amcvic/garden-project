@@ -39,6 +39,9 @@
 .center {
   width: 30%;
   font-family: Noir;
+  text-align: center;
+  position: relative;
+  top: 125px;
 }
 
 @font-face {
@@ -54,4 +57,10 @@
 
 h3 {
   color: #342a1d;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  top: 100px;
 }

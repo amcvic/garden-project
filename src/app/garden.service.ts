@@ -23,7 +23,7 @@ export class GardenService {
   }
 
   private loginUrl = 'http://localhost:3000/api/auth/login';
-  private productUrl = 'http://localhost:3000/api/product'
+  private productUrl = 'http://localhost:3000/api/product';
 
   login (email: string, password: string): Observable<any> {
     let user = new User();
