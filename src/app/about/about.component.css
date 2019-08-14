@@ -4,31 +4,32 @@
     position: fixed; 
     left: 0px; 
     top: 0px; 
-    opacity: .5;
-    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+    opacity: .3;
+    z-index: -1; 
   }
   .stretch {
     width:100%;
     height:100%;
   }
   @font-face {
-    font-family: GardenGrown;
-    src: url('../../assets/OTF/Gardengrown-regular.otf');
+    font-family: Noir;
+    src: url('../../assets/Noir/NoirStd-Regular.ttf');
   }
   
   @font-face {
-    font-family: GardenGrown;
-    src: url('../../assets/OTF/Gardengrown-caps-regular.otf');
-    text-transform: uppercase;
+    font-family: Noir;
+    src: url('../../assets/Noir/NoirStd-Bold.ttf');
+    font-weight: bold;
   }
   
   h3, p, ::placeholder, .button {
-    font-family: GardenGrown; 
+    font-family: Noir; 
     letter-spacing: 2px;
+    color: #666737;
   }
 
   ::placeholder, .button {
-      color: grey;
+      color: #666737;
   }
   
   input {
@@ -52,7 +53,7 @@
     background-color:#a4c76f;
     border: none;
     border-radius: 4px;
-    height: 1.5em;
+    height: 1em;
     font-size: 1em;
     padding-left: .4em;
   }
