@@ -10,8 +10,9 @@ p {
 .image {
     background: url(../../assets/photo-1562592306-54967af3926d.jpg);
     /* background-size: 1080px 640px; */
-    width: auto;
+    max-width: 100%;
     height: 700px;
     /* position: center; */
+    background-size: cover;
     background-repeat: no-repeat;
 }
