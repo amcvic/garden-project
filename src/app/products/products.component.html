@@ -1,5 +1,5 @@
 <div class='container'>
-  <div class='product' *ngFor='let product of products; let i = index'>
+  <div data-aos='zoom-in-up' class='product' *ngFor='let product of products; let i = index'>
     <h2>{{ product.product_name }}</h2><h4> - ${{ product.product_price }} </h4><button *ngIf='sessionToken' (click)='delete(product.id)'>x</button><br/><br/>
     <img alt={{product.product_image}} src='https://loremflickr.com/g/200/200/plant,garden?lock={{i}}' />
     <p>{{ product.product_description }}</p>
