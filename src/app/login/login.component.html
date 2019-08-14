@@ -1,0 +1,15 @@
+<div class='center'>
+    <h1>Login</h1>
+    <form>
+      <label>E-mail:
+        <input #email />
+      </label>
+      <br/>
+      <label>Password:
+        <input type='password' #password/>
+      </label>
+      <br/>
+      <button (click)='login(email.value, password.value);email.value="";password.value=""'>login</button>
+      <button (click)='logout()'>logout</button>
+    </form>
+</div>
